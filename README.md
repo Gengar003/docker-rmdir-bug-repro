@@ -6,7 +6,7 @@ In some cases, a `Dockerfile` is unable to remove a directory that a parent imag
 As far as I can tell, this
 
 1. Only affects Docker daemons using the AUFS storage driver
-2. Is fixed in the latest combo of Docker + AUFS.
+2. Only manifests when AUFS is combined with an older Linux kernel (3.x - unsure of when exactly the fix came in)
 
 Usage
 ==============================
