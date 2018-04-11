@@ -53,6 +53,7 @@ Known Combinations
 | OS     | OS Version | Kernel Version               | Docker Version | Storage Driver                   | Affected? |
 | ------ | ---------- | ---------------------------- | -------------- | -------------------------------- | --------- |
 | Ubuntu | 14.04      | 3.13.0-119-generic           | 1.13.1         | aufs `1:3.2+20130722-1.1`        | y         |
+| Ubuntu | 14.04      | 4.4.0-21-generic             | 1.13.1         | aufs `1:3.2+20130722-1.1`        |           |
 | Ubuntu | 14.04      | 3.13.0-119-generic           | 17.05.0-ce     | aufs `1:3.2+20130722-1.1`        | y         |
 | Ubuntu | 16.04      | 4.4.0-119-generic            | 17.05.0-ce     | aufs `1:3.2+20130722-1.1ubuntu1` |           |
 | CentOS | 7.3.1611   | 3.10.0-514.26.2.el7.x86_64   | 1.13.1         | devicemapper                     |           |
