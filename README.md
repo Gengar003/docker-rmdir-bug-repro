@@ -15,7 +15,7 @@ Usage
 2. Run `make build`
 3. Run `make test`
 
-Expected Output:
+**Expected Output:**
 
 	$ make test
 	PARENT: /stuff dir created with COPY and deleted in parent should be empty:
@@ -26,6 +26,26 @@ Expected Output:
 	    OK
 	CHILD: /stuff-mkdir dir created with 'mkdir' and deleted in child should be empty:
 	    OK
+
+**Example Failed Output:**
+
+	$ make test
+	PARENT: /stuff dir created with COPY and deleted in parent should be empty:
+	    OK
+	PARENT: /stuff-mkdir dir created with 'mkdir' and deleted in parent should be empty:
+	    OK
+	CHILD: /stuff dir created with COPY and deleted in child should be empty:
+	    FAIL
+	total 12
+	drwxr-xr-x    2 root     root        4.0K Apr 11 15:30 .
+	drwxr-xr-x   28 root     root        4.0K Apr 11 15:30 ..
+	-rw-r--r--    1 root     root           4 Apr 11 15:30 child-thing.txt
+	CHILD: /stuff-mkdir dir created with 'mkdir' and deleted in child should be empty:
+	    FAIL
+	total 8
+	drwxr-xr-x    2 root     root        4.0K Apr 11 15:30 .
+	drwxr-xr-x   28 root     root        4.0K Apr 11 15:30 ..
+	-rw-r--r--    1 root     root           0 Apr 11 15:30 child-mkdir-thing.txt
 
 Known Combinations
 ==============================
